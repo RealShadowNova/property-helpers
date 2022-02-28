@@ -1,4 +1,4 @@
-<div algin="center">
+<div align="center">
 
 # Property Helpers
 
