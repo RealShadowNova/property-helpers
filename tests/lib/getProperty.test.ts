@@ -7,6 +7,11 @@ describe('getProperty', () => {
       expect(getProperty({ a: { b: 'c' } }, [])).toEqual({ a: { b: 'c' } });
     });
 
+    test('GIVEN object w/ empty path THEN returns symbol', () => {
+      expect(getProperty({ a: 'b' }, [], false)).toEqual(PROPERTY_NOT_FOUND);
+      expect(getProperty({ a: { b: 'c' } }, [], false)).toEqual(PROPERTY_NOT_FOUND);
+    });
+
     test('GIVEN object w/ path THEN gets value at path', () => {
       expect(getProperty({ a: 'b' }, ['a'])).toBe('b');
       expect(getProperty({ a: { b: 'c' } }, ['a'])).toEqual({ b: 'c' });
