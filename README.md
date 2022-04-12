@@ -50,7 +50,7 @@ export function deleteProperty<T>(input: unknown, path: string[]): T;
 A helper function to get a property from an object or array at a path.
 
 ```typescript
-export function getProperty<T>(input: unknown, path: string[]): T | typeof PROPERTY_NOT_FOUND;
+export function getProperty<T = unknown>(input: unknown, path: string[], fallbackToInput = true): T | typeof PROPERTY_NOT_FOUND;
 ```
 
 ---
