@@ -10,7 +10,5 @@
     "source.organizeImports": true
   },
   "files.eol": "\n",
-  "cSpell.maxNumberOfProblems": 8,
-  "cSpell.numSuggestions": 24,
-  "cSpell.words": ["Hendry", "commitlint", "favware", "tsbuildinfo"]
+  "typescript.tsdk": "node_modules\\typescript\\lib"
 }

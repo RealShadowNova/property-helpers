@@ -132,9 +132,6 @@
 - name: 'Status: WIP'
   description: Issues and PRs that are still a work in progress.
   color: b60205
-- name: 'Type: Caching'
-  description: Issues and PRs related to caching.
-  color: 1d76db
 - name: 'Type: Consistency'
   description: Issues and PRs related to code consistency.
   color: 1d76db
@@ -166,12 +163,6 @@
 - name: 'Type: Security'
   description: Pull requests that address a security vulnerability
   color: ee0701
-- name: 'Type: Sharding'
-  description: Issues and PRs related to sharding.
-  color: 1d76db
 - name: 'Type: Typo'
   description: Issues and PRs related to typos in the documentation or code.
   color: c5def5
-- name: 'Type: Needs Rebase & Merge'
-  description: PRs that should be merged through the "Rebase and merge" strategy
-  color: 24853c
