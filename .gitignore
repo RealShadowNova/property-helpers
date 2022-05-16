@@ -6,13 +6,9 @@ node_modules/
 **/dist
 **/*.tsbuildinfo
 
-# Ignore JavaScript files
-**/*.js
-**/*.mjs
-**/*.js.map
-**/*.d.ts
-!src/**/*.d.ts
-!**/scripts/**/*.mjs
+# Build Artifacts
+dist/
+build/
 
 # Ignore heapsnapshot and log files
 *.heapsnapshot

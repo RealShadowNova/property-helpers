@@ -1,8 +1,9 @@
+/src/ @RealShadowNova
+/tests/ @RealShadowNova
+LICENSE.md @RealShadowNova
+
 /.github/ @RealShadowNova
 /.husky/ @RealShadowNova
 /.vscode/ @RealShadowNova
-/.yarn/ @RealShadowNova
-/src/ @RealShadowNova
-/tests/ @RealShadowNova
-LICENSE @RealShadowNova
 package.json @RealShadowNova
+README.md @RealShadowNova
