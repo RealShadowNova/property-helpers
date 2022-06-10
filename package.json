@@ -56,7 +56,7 @@
     "rollup-plugin-typescript2": "^0.32.0",
     "ts-jest": "^28.0.4",
     "tsup": "^6.0.1",
-    "typedoc": "^0.22.15",
+    "typedoc": "^0.22.17",
     "typedoc-json-parser": "^1.0.0",
     "typescript": "^4.7.3"
   },
