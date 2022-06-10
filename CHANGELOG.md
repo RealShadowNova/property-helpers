@@ -8,4 +8,4 @@ All notable changes to this project will be documented in this file.
 
 - add fallbackToInput parameter ([e41226c](https://github.com/RealShadowNova/property-helpers/commit/e41226cadfdfa74615238f8da88f2558b911c934))
 
-## 1.0.0 (2022-02-28)
+## [1.0.0](https://github.com/RealShadowNova/property-helpers/tree/v1.0.0) (2022-02-28)
