@@ -9,6 +9,7 @@ node_modules/
 # Build Artifacts
 dist/
 build/
+docs/
 
 # Ignore heapsnapshot and log files
 *.heapsnapshot

@@ -16,6 +16,7 @@
   },
   "scripts": {
     "clean": "rimraf dist node_modules/.cache",
+    "docs": "typedoc-json-parser",
     "lint": "eslint src tests --ext ts --fix",
     "format": "prettier --write {src,tests}/**/*.ts",
     "test": "jest",
@@ -55,6 +56,8 @@
     "rollup-plugin-typescript2": "^0.32.0",
     "ts-jest": "^28.0.4",
     "tsup": "^6.0.1",
+    "typedoc": "^0.22.15",
+    "typedoc-json-parser": "^1.0.0",
     "typescript": "^4.7.3"
   },
   "repository": {
