@@ -2,7 +2,7 @@
   "name": "property-helpers",
   "version": "1.1.0",
   "description": "Simple helper functions for working with properties",
-  "author": "Hezekiah Hendry <real.shadow.nova@gmail.com>",
+  "author": "Hezekiah Hendry <hezekiah.hendry@gmail.com>",
   "license": "MIT",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
