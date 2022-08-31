@@ -16,8 +16,9 @@ export function getProperty<T = unknown>(input: unknown, path: string[], fallbac
 
   return path.reduce<Record<PropertyKey, any>>((previousStep, step) => {
     if (!isObjectOrArray(previousStep)) return PROPERTY_NOT_FOUND;
-    if ((Array.isArray(previousStep) && previousStep.length > Number(step)) || step in previousStep)
+    if ((Array.isArray(previousStep) && previousStep.length > Number(step)) || step in previousStep) {
       return (previousStep as Record<PropertyKey, any>)[step];
+    }
 
     return PROPERTY_NOT_FOUND;
   }, input);
