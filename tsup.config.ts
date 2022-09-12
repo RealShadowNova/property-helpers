@@ -12,7 +12,6 @@ export default defineConfig({
   target: 'es2021',
   tsconfig: relative(__dirname, resolve(process.cwd(), 'src', 'tsconfig.json')),
   keepNames: true,
-  globalName: 'PropertyHelpers',
   esbuildOptions(options, context) {
     if (context.format === 'cjs') {
       options.banner = {
