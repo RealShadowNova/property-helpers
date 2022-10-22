@@ -83,13 +83,13 @@ jobs:
         env:
           SEMVER: ${{ env.NAME }}
         run: |
-          mkdir -p out/property-helpers
-          mv docs/api.json out/property-helpers/${SEMVER}.json
+          mkdir -p out/docs/property-helpers
+          mv docs/api.json out/docs/property-helpers/${SEMVER}.json
       - name: Move Documentation
         if: ${{ env.TYPE == 'branch' }}
         run: |
-          mkdir -p out/property-helpers
-          mv docs/api.json out/property-helpers/${NAME}.json
+          mkdir -p out/docs/property-helpers
+          mv docs/api.json out/docs/property-helpers/${NAME}.json
 
       - name: Commit & Push
         run: |
