@@ -1344,28 +1344,28 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@joshdb/eslint-config@npm:1.1.0-next.89e2358.0":
-  version: 1.1.0-next.89e2358.0
-  resolution: "@joshdb/eslint-config@npm:1.1.0-next.89e2358.0"
+"@joshdb/eslint-config@npm:1.1.0-next.cf1153a.0":
+  version: 1.1.0-next.cf1153a.0
+  resolution: "@joshdb/eslint-config@npm:1.1.0-next.cf1153a.0"
   dependencies:
     "@sapphire/eslint-config": ^4.4.2
-    "@typescript-eslint/eslint-plugin": ^5.59.6
-    "@typescript-eslint/parser": ^5.59.6
+    "@typescript-eslint/eslint-plugin": ^5.59.7
+    "@typescript-eslint/parser": ^5.59.7
     eslint: ^8.41.0
     eslint-config-prettier: ^8.8.0
     eslint-plugin-prettier: ^4.2.1
     prettier: ^2.8.8
     typescript: ^5.0.4
-  checksum: 6d5345791db02549e110c473160915ab30ddde4ab3725af19b2211023b0516b08581e94bf5ae7ecc3b92896566c00c3e1db6ecbbf13b0815e88645431cd0db15
+  checksum: f5bcb0f4d4b8517249e6770e8d67afc5c62064f44ab603699afb8ac3b8fb2e90d27e033561ab735908a4fae5d886694df7c05a1d83ca7d65aa95af4092a4f782
   languageName: node
   linkType: hard
 
-"@joshdb/ts-config@npm:1.1.0-next.89e2358.0":
-  version: 1.1.0-next.89e2358.0
-  resolution: "@joshdb/ts-config@npm:1.1.0-next.89e2358.0"
+"@joshdb/ts-config@npm:1.1.0-next.cf1153a.0":
+  version: 1.1.0-next.cf1153a.0
+  resolution: "@joshdb/ts-config@npm:1.1.0-next.cf1153a.0"
   dependencies:
     "@sapphire/ts-config": ^4.0.0
-  checksum: 2440bd09d2fb642790a569f4b2475d3a6394b23a11027b3ec2d6cdcb2c07836ecb9294a4adabaca4bce77e1acee5be7d9a3fcd3cd36120d3dcac5a03406be821
+  checksum: aefe6c08a90c688f54efbf274f1d0e021b352597bcf448055a30d59cd25573461ab7c006c664467229cfbcedff1efcf72528e8116ea40229b0d42022e3830772
   languageName: node
   linkType: hard
 
@@ -1826,7 +1826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^5.59.2":
+"@typescript-eslint/eslint-plugin@npm:^5.59.2, @typescript-eslint/eslint-plugin@npm:^5.59.7":
   version: 5.59.7
   resolution: "@typescript-eslint/eslint-plugin@npm:5.59.7"
   dependencies:
@@ -1874,7 +1874,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^5.59.2":
+"@typescript-eslint/parser@npm:^5.59.2, @typescript-eslint/parser@npm:^5.59.7":
   version: 5.59.7
   resolution: "@typescript-eslint/parser@npm:5.59.7"
   dependencies:
@@ -6416,8 +6416,8 @@ __metadata:
     "@commitlint/config-conventional": ^17.6.3
     "@favware/cliff-jumper": ^2.0.0
     "@favware/npm-deprecate": ^1.0.7
-    "@joshdb/eslint-config": 1.1.0-next.89e2358.0
-    "@joshdb/ts-config": 1.1.0-next.89e2358.0
+    "@joshdb/eslint-config": 1.1.0-next.cf1153a.0
+    "@joshdb/ts-config": 1.1.0-next.cf1153a.0
     "@types/jest": ^29.5.1
     "@types/node": ^17.0.23
     "@types/rimraf": ^3.0.2
