@@ -8,14 +8,24 @@ import { isObjectOrArray } from './private/isObjectOrArray';
  * @returns Whether the property at the path exists.
  */
 export function hasProperty(input: unknown, path: string[]): boolean {
-  if (path.length === 0) return true;
-  if (!isObjectOrArray(input)) return false;
+  if (path.length === 0) {
+    return true;
+  }
+
+  if (!isObjectOrArray(input)) {
+    return false;
+  }
 
   let result = false;
 
   path.reduce<Record<PropertyKey, any>>((previousStep, step, index) => {
-    if (!isObjectOrArray(previousStep)) return previousStep;
-    if (index === path.length - 1 && ((Array.isArray(previousStep) && previousStep.length > Number(step)) || step in previousStep)) result = true;
+    if (!isObjectOrArray(previousStep)) {
+      return previousStep;
+    }
+
+    if (index === path.length - 1 && ((Array.isArray(previousStep) && previousStep.length > Number(step)) || step in previousStep)) {
+      result = true;
+    }
 
     return (previousStep as Record<PropertyKey, any>)[step];
   }, input);

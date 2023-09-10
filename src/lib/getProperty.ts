@@ -11,11 +11,19 @@ export const PROPERTY_NOT_FOUND = Symbol('PROPERTY_NOT_FOUND');
  * @returns The property at the path or {@link PROPERTY_NOT_FOUND} if the property does not exist.
  */
 export function getProperty<T = unknown>(input: unknown, path: string[], fallbackToInput = true): T | typeof PROPERTY_NOT_FOUND {
-  if (path.length === 0) return fallbackToInput ? (input as unknown as T) : PROPERTY_NOT_FOUND;
-  if (!isObjectOrArray(input)) return PROPERTY_NOT_FOUND;
+  if (path.length === 0) {
+    return fallbackToInput ? (input as unknown as T) : PROPERTY_NOT_FOUND;
+  }
+
+  if (!isObjectOrArray(input)) {
+    return PROPERTY_NOT_FOUND;
+  }
 
   return path.reduce<Record<PropertyKey, any>>((previousStep, step) => {
-    if (!isObjectOrArray(previousStep)) return PROPERTY_NOT_FOUND;
+    if (!isObjectOrArray(previousStep)) {
+      return PROPERTY_NOT_FOUND;
+    }
+
     if ((Array.isArray(previousStep) && previousStep.length > Number(step)) || step in previousStep) {
       return (previousStep as Record<PropertyKey, any>)[step];
     }
