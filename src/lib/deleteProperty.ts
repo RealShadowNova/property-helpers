@@ -10,10 +10,15 @@ import { setProperty } from './setProperty';
  * @returns The input object or array.
  */
 export function deleteProperty<T>(input: unknown, path: string[]): T {
-  if (path.length === 0 || !isObjectOrArray(input) || !hasProperty(input, path)) return input as unknown as T;
+  if (path.length === 0 || !isObjectOrArray(input) || !hasProperty(input, path)) {
+    return input as unknown as T;
+  }
 
   path.reduce<Record<PropertyKey, any>>((previousStep, step, index) => {
-    if (!isObjectOrArray(previousStep)) return previousStep;
+    if (!isObjectOrArray(previousStep)) {
+      return previousStep;
+    }
+
     if (index === path.length - 1) {
       if (Array.isArray(previousStep) && previousStep.length > Number(step)) {
         input = setProperty(
@@ -21,7 +26,9 @@ export function deleteProperty<T>(input: unknown, path: string[]): T {
           path.slice(0, -1),
           previousStep.filter((_, i) => i !== Number(step))
         );
-      } else if (step in previousStep) Reflect.deleteProperty(previousStep, step);
+      } else if (step in previousStep) {
+        Reflect.deleteProperty(previousStep, step);
+      }
     }
 
     return (previousStep as Record<PropertyKey, any>)[step];

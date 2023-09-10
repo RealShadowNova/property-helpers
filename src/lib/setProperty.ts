@@ -15,13 +15,21 @@ export function setProperty<T>(input: unknown, path: string[], value: unknown): 
     return input as unknown as T;
   }
 
-  if (!isObjectOrArray(input)) return setProperty({}, path, value);
+  if (!isObjectOrArray(input)) {
+    return setProperty({}, path, value);
+  }
 
   path.reduce<Record<PropertyKey, any>>((previousStep, step, index) => {
-    if (!isObjectOrArray(previousStep[step])) previousStep[step] = {};
+    if (!isObjectOrArray(previousStep[step])) {
+      previousStep[step] = {};
+    }
+
     if (index === path.length - 1) {
-      if (Array.isArray(previousStep)) previousStep[Number(step)] = value;
-      else Reflect.set(previousStep, step, value);
+      if (Array.isArray(previousStep)) {
+        previousStep[Number(step)] = value;
+      } else {
+        Reflect.set(previousStep, step, value);
+      }
     }
 
     return previousStep[step];
