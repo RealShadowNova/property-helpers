@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+# [3.0.0](https://github.com/RealShadowNova/property-helpers/compare/v2.0.0...v3.0.0) - (2024-06-12)
+
+## 🚀 Features
+
+- Update Node.js to v20 ([4ec6688](https://github.com/RealShadowNova/property-helpers/commit/4ec6688be4bee8ea364b47ee7b26751834593030))
+
+## 🧪 Testing
+
+- Switch to `vitest` ([0656f06](https://github.com/RealShadowNova/property-helpers/commit/0656f06753ccb01ee198d431790640d7e55b8986))
+
 # [2.0.0](https://github.com/RealShadowNova/property-helpers/compare/v1.1.0...v2.0.0) - (2022-09-17)
 
 ## 📝 Documentation

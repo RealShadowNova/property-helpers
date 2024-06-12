@@ -1,6 +1,6 @@
 {
   "name": "property-helpers",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Simple helper functions for working with properties",
   "author": "Hezekiah Hendry <hezekiah.hendry@gmail.com>",
   "license": "MIT",
