@@ -2673,6 +2673,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-prettier@npm:^10.0.2":
+  version: 10.0.2
+  resolution: "eslint-config-prettier@npm:10.0.2"
+  peerDependencies:
+    eslint: ">=7.0.0"
+  bin:
+    eslint-config-prettier: build/bin/cli.js
+  checksum: 76c30d85b29320c631aafe7e10fa4d065c574d3e5491f7f9c888bfc1351e9ded6b0e0821c4d7b8f49e86b056206c91fb2f5d4b30c8f2c57a6c44fdafa75716c8
+  languageName: node
+  linkType: hard
+
 "eslint-config-prettier@npm:^9.1.0":
   version: 9.1.0
   resolution: "eslint-config-prettier@npm:9.1.0"
@@ -4922,7 +4933,7 @@ __metadata:
     "@typescript-eslint/parser": ^7.18.0
     "@vitest/coverage-v8": ^2.0.5
     eslint: ^8.57.0
-    eslint-config-prettier: ^9.1.0
+    eslint-config-prettier: ^10.0.2
     eslint-plugin-prettier: ^5.2.1
     husky: ^9.1.4
     lint-staged: ^15.2.9
